@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @masterlazybones
 - 👀 I’m interested in making cool designs and art
-- 🌱 I’m currently learning html and css
+- 🌱 I’m currently learning Javascript
 - 💞️ I’m looking to collaborate on graphic design projects
 - 📫 Reach me at masterlazybones@gmail.com 
 - 😄 Pronouns: she/her
