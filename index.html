@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#connect">Connect</a>
+        </div>
+    </nav>
+        <section id="welcome-section">
+            
+            <div class="container">
+                <svg viewBox="0 0 400 500" width="500px" height="500px" class="animation">
+                    <defs>
+                        <filter id="glow">
+                            <fegaussianblur class="blur" result="coloredBlur" stdDeviation="4"></fegaussianblur>
+                            <femerge>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="coloredBlur"></femergenode>
+                                <femergenode in="SourceGraphic"></femergenode> 
+                            </femerge>
+                        </filter>
+                    </defs>
+
+                    <g filter="url(#glow)">
+                        <path class="pencil" d="M 250 250 M 250.004 214.988 L 303 162.001 L 338 196.993 L 319.002 216 L 284 181.005 L 162.002 303.002 C 146.188 364.99 135.028 353.801 197 338 L 319.002 216 "></path>
+                        <path class="com command-1" d="M 195 220 L 140 260 L 195 300"></path>
+                        <path class="com command-2" d="M 250 205 L 205 315"></path>
+                        <path class="com command-3" d="M 260 300 L 315 260 L 260 220"></path>
+                        <path class="music" d="M 180.102 306.166 Q 170.353 293.138 153.539 301.933 Q 144.54 308.062 147.604 319.123 Q 155.952 329.943 172.456 321.458 T 184.966 185.025 H 270.358 Q 275.357 282.339 260.847 295.544 Q 248.231 307.287 238.817 294.204 Q 234.752 284.559 242.428 279.076 Q 257.407 270.113 266.249 285.987"></path>
+                        <path class="planet" d="M 288.772 238.29 Q 326.488 214.452 291.414 206.905 Q 281.202 204.463 262.25 205.328 A 1 1 0 0 0 153.774 252.812 A 1 1 0 0 0 262.249 205.328 C 237.676 148.729 151.532 162.926 148.763 228.473 C 61.308 257.78 132.663 290.347 262.765 248.626 Q 289.173 239.759 295.191 234.002 M 250.001 249.996 M 250 250"></path>
+                    </g>
+                </svg>
+                <!--M 195 220 L 140 260 L 195 300 M 250 205 L 205 315 M 260 300 L 315 260 L 260 220-->
+                <h1 class="welcome-text"><span>Meet</span></br> Nandita</h1>
+                <div class="ball"></div>   
+            </div>
+        </section>
+        <section id="projects">
+            <div class="proj-text">Learned from freeCodeCamp</div>
+            <div class="uptop projectlist">
+                <a href="#welcome-section"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+            <div class="down projectlist">
+                <a href="#connect"><i class="fa-solid fa-angle-down"></i></a>
+            </div>
+            <div class="proj-container">
+                <div class="project-tile disc">
+                    <a href="https://codepen.io/masterlazybones/full/LYwEoOZ" target="_blank"><img src="https://images.beta.cosmos.so/6cae6a74-7263-43fa-95bd-477755c16ff5?format=jpeg"/></a>
+                </div>
+                <div class="project-tile mkey"><a href="https://codepen.io/masterlazybones/full/ZEgxPvy" target="_blank"> <img src="https://images.beta.cosmos.so/03e22993-ddd4-48f4-a192-3ba7c9875f11?format=jpeg"/> </a>
+                </div>
+                <div class="project-tile tech"><a href="https://codepen.io/masterlazybones/full/jOgzJYM" target="_blank"> <img src="https://images.beta.cosmos.so/6a7dee8a-31ad-4328-a68a-a0070962917c?format=jpeg"/></a>
+                </div>
+                <div class="project-tile surv"><a href="https://codepen.io/masterlazybones/full/mdNxoqY" target="_blank"> <img src="https://images.beta.cosmos.so/f5795062-63d6-4d29-afc5-04f6775bc838?format=jpeg"/></div></a>
+            </div>
+        </section>
+        <section id="connect">
+            <div class="uptop connection">
+                <a href="#projects"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+            
+            <div class="connect-container">
+                <div class="palmL"></div>
+                <div class="palmR"></div>
+                <div class="armR"></div>
+                <div class="armL"></div>
+                <div class="glow"></div>
+            </div>
+            <div class="connect-head">Let's Connect!</div>
+            <div class="connect-links">
+                <a id="profile-link" class="links" href="https://github.com/masterlazybones" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a id="profile-link" class="links" href="https://www.linkedin.com/in/nandita08/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a id="profile-link" class="links" href="mailto:nandita.phys08@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </section>
+        <footer>
+            <div>Made with <i class="fa-solid fa-heart"></i> by masterlazybones</div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,469 @@
+@media only screen and (max-width:1600px){
+    .proj-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows:repeat(3, 1fr);
+        gap: 10px;
+        max-width: 1500px; /* Allow the container to expand */
+        margin:auto; /* Center the container */
+        align-items:center;
+    }
+}
+@media only screen and (min-width:1600px){
+    .proj-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows:repeat(2, 1fr);
+        gap: 10px; 
+        max-width: 1500px; /* Allow the container to expand */
+        margin:auto; /* Center the container */
+        align-items:center;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        flex-direction:column;
+        margin-top:-50px;
+    }
+    .ball{
+        margin:-56.5% 45% 72% -59% ;
+        opacity:0;
+    }
+    svg{
+        margin-right:-50%;
+    }
+    .welcome-text{
+        margin-left:-20%;
+        margin-top:-90px;
+    }
+}
+@media only screen and (min-width:600px){
+    .ball{
+        margin:0px 460px 520px -293px ;
+    }
+}
+
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  .montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  :root{
+    --base:#6579be;
+    --accent:#f0b49d;
+  }
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    background-color:var(--base);
+    scroll-behavior: smooth;
+}
+#navbar{
+    display:flex;
+    top:10px;
+    width:100vw;
+    height:70px;
+    /* background-color:#b3978c; */
+    border-radius:10px;
+    position:fixed;
+    justify-content:center;
+    align-items:center;
+}
+
+#navbar>.menu{
+    width:auto;
+    background-color:#f0b49dc7;
+    align-items:center;
+    padding:15px;
+    border-radius:15px;
+}
+.menu>a{
+    text-decoration:none;
+    padding:10px;
+    color:#496dee;
+    font-family:'Lexend', sans-serif;
+
+}
+.menu>a:hover{
+    color:#2856fd
+}
+.container{
+    display:flex;
+    width:auto;
+    height:auto;
+    justify-content:center;
+    align-items:center;
+    /* border:1px solid var(--accent); */
+    margin:25vh auto;
+    border-radius:10px;
+    /* white-space:nowrap;
+    overflow:visible; */
+    text-wrap:wrap;
+}
+
+.ball{
+    width:10px;
+    height:10px;
+    box-shadow:0 0 7px var(--accent); 
+    background-color:var(--accent);
+    border-radius:50%;
+    animation: ball-bounce 4s ease-out 0s 1 normal, move 12s linear forwards 4s infinite;
+    offset-path:path("M 250 250 L 250 215 L 303 162.001 L 338 196.993 L 319.002 216 L 284 181.005 L 162.002 303.002 C 146.188 364.99 135.028 353.801 197 338 L 319 216 L 195 220 L 140 260 L 195 300 L 250 205 L 205 315 L 260 300 L 315 260 L 260 220 L 180.102 306.166 Q 170.353 293.138 153.539 301.933 Q 144.54 308.062 147.604 319.123 Q 155.952 329.943 172.456 321.458 T 184.966 185.025 H 270.358 Q 275.357 282.339 260.847 295.544 Q 248.231 307.287 238.817 294.204 Q 234.752 284.559 242.428 279.076 Q 257.407 270.113 266.249 285.987 L 288.772 238.29 Q 326.488 214.452 291.414 206.905 Q 281.202 204.463 262.25 205.328 A 1 1 0 0 0 153.774 252.812 A 1 1 0 0 0 262.249 205.328 C 237.676 148.729 151.532 162.926 148.763 228.473 C 61.308 257.78 132.663 290.347 262.765 248.626 Q 289.173 239.759 295.191 234.002 C 303.136 219.429 266.761 231.434 250.001 249.996 L 250 250");
+    offset-distance:0%;
+    position:absolute;    
+}
+ 
+.welcome-text{
+    margin-bottom:25px;
+    margin-right:-137px;
+    font-size:51px;
+    font-family:'Lexend', sans-serif;
+    font-weight:400;
+    color:#ffc0a7;
+}
+.welcome-text span{
+    font-size:40px;
+    font-style:normal;
+    font-weight:200;
+    text-transform:none;
+}
+
+svg{
+    margin-left:-300px;
+    margin-bottom:30px;
+}
+.pencil,.planet, .music, .com{
+    fill:none;
+    fill-opacity:0;
+    filter:url(#glow);
+    stroke:var(--accent);
+    stroke-width:1;  
+    position:absolute; 
+}
+.pencil{
+    animation:pencil 12s linear infinite;
+    animation-delay:4.15s;
+    stroke-dasharray:645;
+    stroke-dashoffset:645;
+}
+.command-1{
+    animation:command-1 12s linear infinite;
+    animation-delay:7.3s;
+    stroke-dasharray:136.015;
+    stroke-dashoffset:136.015;
+}
+.command-2{
+    animation:command-2 12s linear infinite;
+    animation-delay:7.75s;
+    stroke-dasharray:118.849;
+    stroke-dashoffset:118.849;
+}
+.command-3{
+    animation:command-3 12s linear infinite;
+    animation-delay:7.95s;
+    stroke-dasharray:136.015;
+    stroke-dashoffset:136.015;
+}
+.music{
+    animation:music 12s linear infinite;
+    animation-delay:10.05s;
+    stroke-dasharray:485.854;
+    stroke-dashoffset:485.854;
+}
+.planet{
+    animation:planet 12s linear infinite;
+    animation-delay:12.25s;
+    stroke-dasharray:857.024;
+    stroke-dashoffset:857.024;
+}
+
+#projects{
+    padding-top:5vh;
+    width:auto;
+    height:auto;
+}
+img {
+    width: 100%; 
+    height: auto;
+}
+.project-tile{
+    opacity:0.8;
+    padding:20px;
+    transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-tile:hover{
+    transform:scale(1.05);
+    opacity:1;
+    z-index:1;
+}
+.project-tile:active{
+    transform:scale(0.95);
+}
+.proj-text{
+    margin:0 auto;
+    font-family:'Lexend', sans-serif;
+    width:100%;
+    margin-left:15%;
+    color:#ffc0a7;
+    font-size:20px;
+}
+#connect{
+    width:100%;
+    height:55vh;
+    padding-top:47vh;
+
+}
+.connect-container{
+    width:200px;
+    height:200px;
+    margin:0 auto;
+}
+.armL, .armR{
+    width:50px;
+    height:5px;
+    background-color:var(--accent);
+    border-radius:5px;
+    margin:auto;
+    z-index:0;
+    animation:connect-hand 15s infinite;
+}
+.armR{
+    transform-origin:right bottom;
+    margin-bottom:-5px;
+    margin-left:50%;
+}
+.armL{
+    transform-origin:left bottom;
+    margin-right:50%;
+}
+.palmL, .palmR{
+    animation:connect-hand 15s infinite;  
+    width:15px;
+    height:15px;
+}
+.palmL, .palmR, .glow{
+    border-radius:50%;
+    background-color:var(--accent);
+    margin:auto;
+    z-index:1;
+}
+.glow{
+    width:20px;
+    height:20px;
+    filter:blur(6px);
+    margin-top:-12.5px;
+    animation:glow 15s infinite;
+}
+.palmL{
+    margin-bottom:-7.5%;
+    margin-left:46%;
+    transform-origin: -42px 10px;
+}
+.palmR{
+    margin-bottom:-4.5%;
+    margin-right:46.5%;
+    transform-origin:58px 10px;
+}
+.connect-head{
+    font-family:'Lexend', sans-serif;
+    font-size:40px;
+    text-align:center;
+    color:var(--accent);
+    margin-top:-315px;
+}
+.connect-links{
+    text-align:center;
+    margin-top:150px;
+}
+.links{
+    padding:15px;
+    font-size:60px;
+    color:var(--accent);
+}
+
+.uptop>a, .down>a{
+    color:var(--accent);
+    font-size:30px;
+}
+.uptop{
+    margin-left:80%;
+    margin-top:-25px;
+    transition:transform 0.5s ease;
+}
+.down{
+    margin-left:80%;
+    margin-top:-15px;
+    transition:transform 0.5s ease;
+}
+.uptop:hover{
+    transform:translate(0px, -10px);
+}
+.down:hover{
+    transform:translate(0px, 10px);
+}
+.connection{
+    margin-top:-400px;
+    position:absolute;
+}
+footer{
+    width:235px;
+    color:var(--accent);
+    font-family:'Lexend', sans-serif;
+    font-size:15px;
+    margin:-90px auto;
+    padding:20px;
+    text-wrap: nowrap;
+}
+@keyframes glow{
+    20%,30%,70%,80%{
+        opacity:0;
+    }
+    0%, 50%, 100%{
+        opacity:1
+    }
+}
+@keyframes connect-hand{
+    0%,5%,45%,50%,55%,95%,100%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(45deg);
+    }
+    75%{
+        transform:rotate(-45deg);
+    }
+}
+/*procedure: base speed is 244.258 units/s. calculate how much time an animation would take while traveling at this speed. convert that time into percentage wrt 12s. add delay to cover move elements. make sure stroke-dashoffset is set to specific value at the start and not 100%. gg*/
+/*pencil takes 2.6326s*/
+@keyframes ball-bounce{
+    0%, 25%, 50%, 75%, 100%{
+        transform: translate(0px, 0);
+    }
+    12.5%, 37.5%, 62.7%, 87.5%{
+        transform: translate(60px,0);
+    }
+}
+@keyframes pencil{
+    0%{
+        opacity:1;
+        stroke-dashoffset:645;
+    }
+    21.94%{
+        stroke-dashoffset:0;
+        opacity:1;
+    }
+    24.94%, 100%{
+        opacity:0;
+        stroke-dashoffset:0;
+    }   
+}
+/*music takes 485.854 u and 1.989s*/
+@keyframes music{
+    0%{
+        opacity:1;
+        stroke-dashoffset:485.854
+    }
+    16.58%{
+        stroke-dashoffset:0;
+        opacity:1;
+    }
+    20.58%, 100%{
+        opacity:0;
+        stroke-dashoffset:0;
+    }
+}
+@keyframes planet {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 857.024;
+    }
+    
+    29.24% { /* was 25% */
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    32.24%, 100% { /* was 26% */
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+/*command-1 takes 0.5568s which is 4.64%*/
+@keyframes command-1 {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 136.015;
+    }
+    4.64%{
+        opacity:1;
+        stroke-dashoffset:0;
+    }
+    19.5%{
+        opacity:1;
+    }
+    22.5%, 100% { /* was 26% */
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+/*command-2 takes 0.48657s which is 4.054%*/
+@keyframes command-2 {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 118.849;
+    }
+    4.64% { /* was 8.333% */
+        opacity: 1;
+        stroke-dashoffset:118.849;
+    }
+    8.69% { /* was 16.666% */
+        stroke-dashoffset: 0;
+    }
+    15.5%{
+        opacity:1;
+    }
+    18.5%, 100% { /* was 26% */
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes command-3 {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 136.015;
+    }
+    8.69%{
+        opacity:1;
+        stroke-dashoffset:136.015;
+    }
+    13.34% { /* was 16.66% */
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+    14%{
+        opacity:1;
+    }
+    17%, 100% { /* was 26% */
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes move{
+    to{
+         offset-distance:100%
+    }
+}
