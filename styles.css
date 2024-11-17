@@ -1,4 +1,4 @@
-@media only screen and (max-width:1600px){
+@media only screen and (max-width:1400px){
     .proj-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
@@ -9,7 +9,7 @@
         align-items:center;
     }
 }
-@media only screen and (min-width:1600px){
+@media only screen and (min-width:1400px){
     .proj-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -67,17 +67,26 @@
     padding:0;
 }
 html{
+    scroll-behavior:smooth;
+}
+body{
     background-color:var(--base);
-    scroll-behavior: smooth;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+#welcome-section{
+    width: 100%;
+    height:100vh;
 }
 #navbar{
     display:flex;
+    padding-top:10px;
+    position:static;
+    margin:0 auto;
     top:10px;
-    width:100vw;
-    height:70px;
     /* background-color:#b3978c; */
     border-radius:10px;
-    position:fixed;
     justify-content:center;
     align-items:center;
 }
@@ -102,11 +111,9 @@ html{
 .container{
     display:flex;
     width:auto;
-    height:auto;
     justify-content:center;
-    align-items:center;
+    align-items:flex-end;
     /* border:1px solid var(--accent); */
-    margin:25vh auto;
     border-radius:10px;
     /* white-space:nowrap;
     overflow:visible; */
@@ -114,6 +121,8 @@ html{
 }
 
 .ball{
+    position:absolute;
+    top:200px;
     width:10px;
     height:10px;
     box-shadow:0 0 7px var(--accent); 
@@ -143,6 +152,7 @@ html{
 svg{
     margin-left:-300px;
     margin-bottom:30px;
+    transform:translateY(150px);
 }
 .pencil,.planet, .music, .com{
     fill:none;
