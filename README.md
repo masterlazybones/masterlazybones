@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @masterlazybones
+- 👋 Hi, I’m Nandita!
 - 👀 I’m interested in making cool designs and art
 - 🌱 I’m currently learning Javascript
 - 💞️ I’m looking to collaborate on graphic design projects
